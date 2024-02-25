@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Student App</title>
+    <script src="/js/rectangles.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script> 
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/students/drawStudents">Student App</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/students/addNewStudent">Add New Student</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/students/viewAll">Show List</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <h1 style="margin-top: 20%; margin-bottom: 50px; font-size: 48px;" class="text-center">Student Display</h1>
+                <div id="rectangles-container" style="display: flex; flex-wrap: wrap; min-height: 300px; overflow: auto; border-style: solid; border-color: rgb(7, 201, 250);
+                justify-content: center; align-items: center;"> 
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-dark" style="position: fixed; bottom: 0; width: 100%; text-align: center;"> 
+        <div class="container">
+            <span class="text-muted">Daniel Tolsky&nbsp;&nbsp;&nbsp;CMPT 276&nbsp;&nbsp;&nbsp;Feb 25th 2024</span>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
