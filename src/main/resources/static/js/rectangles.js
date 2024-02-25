@@ -18,15 +18,26 @@ fetch('/students/json')
             rectDiv.style.borderColor = 'white';
             rectDiv.style.margin = '10px';
             
-            let nameLabel = document.createElement('h6');
+            let nameLabel = document.createElement('h5');
             nameLabel.textContent = student.name;
+            let color = student.hairColor;
+            nameLabel.style.color = color;
             nameLabel.style.position = 'relative';
             nameLabel.style.top = '50%';
             nameLabel.style.left = '50%';
             nameLabel.style.transform = 'translate(-50%, -50%)';
             nameLabel.style.textAlign = 'center';
 
+            let gpa = document.createElement('h6');
+            gpa.textContent = student.gpa;
+            gpa.style.position = 'relative';
+            gpa.style.top = '50%';
+            gpa.style.left = '50%';
+            gpa.style.transform = 'translate(-50%, -50%)';
+            gpa.style.textAlign = 'center';
+
             rectDiv.appendChild(nameLabel);
+            rectDiv.appendChild(gpa);
             container.appendChild(rectDiv);
         });
     });
